@@ -15,7 +15,7 @@
         <!-- errors -->
         <div class="title form-input">
           <label>Title</label>
-          <input type="text" v-model="title" maxlength="50" />
+          <input type="text" v-model="title" maxlength="40" />
         </div>
         <div class="underline"></div>
         <div class="options">
