@@ -81,8 +81,8 @@ export default {
     },
     async send_promise_made() {
       // title error
-      if (this.title === '') {
-        this.errors.push('Title is required');
+      if (this.title === '' || this.name === '' || this.text === '') {
+        this.errors.push('Please complete all the filds');
         setTimeout(() => {
           this.errors = [];
         }, 2000);
@@ -94,20 +94,20 @@ export default {
           this.errors = [];
         }, 2000);
       }
-      // name error
-      if (this.name === '') {
-        this.errors.push('Name is required');
-        setTimeout(() => {
-          this.errors = [];
-        }, 2000);
-      }
-      // text error
-      if (this.text === '') {
-        this.errors.push('Please write your promise');
-        setTimeout(() => {
-          this.errors = [];
-        }, 2000);
-      }
+      // // name error
+      // if (this.name === '') {
+      //   this.errors.push('Name is required');
+      //   setTimeout(() => {
+      //     this.errors = [];
+      //   }, 2000);
+      // }
+      // // text error
+      // if (this.text === '') {
+      //   this.errors.push('Please write your promise');
+      //   setTimeout(() => {
+      //     this.errors = [];
+      //   }, 2000);
+      // }
       if (this.text.length > 300) {
         this.errors.push('Maximum promise characteres 300');
         setTimeout(() => {
