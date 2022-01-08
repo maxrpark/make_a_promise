@@ -82,7 +82,7 @@ export default {
     async send_promise_made() {
       // title error
       if (this.title === '' || this.name === '' || this.text === '') {
-        this.errors.push('Please complete all the filds');
+        this.errors.push('Please, complete all the fields');
         setTimeout(() => {
           this.errors = [];
         }, 2000);
