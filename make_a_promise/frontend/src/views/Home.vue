@@ -42,7 +42,6 @@ export default {
     async getData() {
       try {
         let response = await axios.get(this.url);
-        console.log(response);
         this.allPromises = await response.data.results;
         this.next = await response.data.next;
       } catch (err) {
@@ -72,13 +71,17 @@ export default {
 </script>
 
 <style scoped>
+.main-section {
+  height: 100%;
+  width: 100vw;
+}
 .modal-open {
   overflow: hidden;
   display: none;
 }
 .modal {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   z-index: 2;
   top: 0;

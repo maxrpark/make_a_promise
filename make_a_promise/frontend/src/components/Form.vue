@@ -2,7 +2,7 @@
   <div class="form-section" @click.self="closeForm">
     <div class="form-container">
       <form class="form" :style="{ background: color, color: fontColor }">
-        <div class="errors">
+        <div v-show="errors.length" class="errors">
           <!-- errors -->
           <transition name="toast">
             <div v-if="errors.length">
@@ -141,7 +141,7 @@ export default {
 
 <style scoped>
 .form-section {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
@@ -157,6 +157,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .form-container {
@@ -197,7 +198,6 @@ export default {
   height: 2px;
   width: 100%;
   margin: 1rem auto;
-  background-color: white;
 }
 .options {
   display: flex;
@@ -319,8 +319,9 @@ export default {
   top: -130px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120px;
   z-index: -2;
+  margin: 0 auto;
 }
 
 .toast {
@@ -336,18 +337,18 @@ export default {
   padding: 1rem;
 }
 
+/* enter transitions */
 .toast-enter-active {
   animation: wobble 0.5s ease;
 }
-
+/* leave transitions */
 .toast-leave-to {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(-60px);
 }
 .toast-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
-
 @keyframes wobble {
   0% {
     transform: translateY(-100px);
@@ -374,7 +375,7 @@ export default {
     opacity: 1;
   }
   100% {
-    transform: translateX(0px);
+    transform: translate(0px);
     opacity: 1;
   }
 }

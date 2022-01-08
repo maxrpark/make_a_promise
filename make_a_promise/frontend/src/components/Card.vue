@@ -10,9 +10,9 @@
           :class="`card${index}`"
           class="promises"
           :style="
-            index <= 10
+            index <= 5
               ? { marginTop: index * 10 + 'px', background: promise.color }
-              : { marginTop: 100 + 'px', background: promise.color }
+              : { marginTop: 60 + 'px', background: promise.color }
           "
         >
           <div class="card-content" :style="{ color: promise.fontColor }">
@@ -80,9 +80,7 @@ export default {
           },
         });
         const reverseCardsArray = singleCard.reverse();
-        const reverseBackgorundColorArray = backgorundColor.reverse();
-        console.log(reverseBackgorundColorArray);
-        console.log(reverseBackgorundColorArray);
+        // const reverseBackgorundColorArray = backgorundColor.reverse();
         for (let i = 0; i < reverseCardsArray.length; i++) {
           tl.to(`.${reverseCardsArray[i]}`, {
             yPercent: 100 * 2,
@@ -120,11 +118,25 @@ export default {
 <style scoped>
 .promise-container {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 100%;
+  position: fixed;
+  /* position: relative; */
   display: grid;
   place-content: center;
   overflow: hidden;
+}
+.card {
+  width: 100vw;
+  min-height: 300px;
+  z-index: 1;
+  position: relative;
+}
+.background-color {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: hsla(293, 40%, 92%, 0.947);
 }
 .promises {
   height: 500px;
@@ -146,6 +158,7 @@ export default {
 .title {
   margin: 1rem auto 0.5rem auto;
   font-size: 2rem;
+  text-align: center;
 }
 .underline {
   height: 2px;
@@ -161,19 +174,6 @@ export default {
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.card {
-  width: 300px;
-  height: 300px;
-  z-index: 1;
-}
-.background-color {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background: hsla(293, 40%, 92%, 0.947);
 }
 
 .btn {
