@@ -16,8 +16,8 @@ SECRET_KEY = 'django-insecure-c_wpnbs#f6-h3j8-x36dt@9*+p7=-yu3vw=+9@e4#*2y3$gcl)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = ["maxicode.pythonanywhere.com"]
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["maxicode.pythonanywhere.com"]
 
 CORS_ORIGIN_ALLOW_ALL = False
 
