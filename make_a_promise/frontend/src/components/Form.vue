@@ -157,11 +157,10 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .form-container {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 .form {
