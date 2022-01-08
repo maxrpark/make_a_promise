@@ -1,4 +1,4 @@
-import os 
+import os
 from pathlib import Path
 
 
@@ -16,9 +16,9 @@ SECRET_KEY = 'django-insecure-c_wpnbs#f6-h3j8-x36dt@9*+p7=-yu3vw=+9@e4#*2y3$gcl)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["maxicode.pythonanywhere.com"]
 
-CORS_ORIGIN_ALLOW_ALL = True   
+CORS_ORIGIN_ALLOW_ALL = False
 
 
 # Application definition
@@ -119,7 +119,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-STATIC_ROOT = 'http://127.0.0.1:8000/'
+STATIC_ROOT = '/home/maxiCode/make_a_promise/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
