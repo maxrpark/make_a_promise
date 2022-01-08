@@ -118,7 +118,7 @@ export default {
 <style scoped>
 .promise-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   /* position: relative; */
   display: grid;
