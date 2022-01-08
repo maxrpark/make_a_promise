@@ -315,7 +315,7 @@ export default {
 }
 .errors {
   position: absolute;
-  top: -130px;
+  top: -50px;
   left: 0;
   width: 100%;
   height: 120px;
