@@ -3,7 +3,7 @@
     <div class="form-container">
       <form class="form" :style="{ background: color, color: fontColor }">
         <div class="errors">
-          <!-- erros -->
+          <!-- errors -->
           <transition name="toast">
             <div v-if="errors.length">
               <div v-for="error in errors" v-bind:key="error" class="toast">
@@ -12,7 +12,7 @@
             </div>
           </transition>
         </div>
-        <!-- erros -->
+        <!-- errors -->
         <div class="title form-input">
           <label>Title</label>
           <input type="text" v-model="title" maxlength="50" />
