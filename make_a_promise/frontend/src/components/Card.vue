@@ -139,7 +139,7 @@ export default {
   background: hsla(293, 40%, 92%, 0.947);
 }
 .promises {
-  height: 500px;
+  height: 400px;
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
@@ -148,6 +148,11 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .promises {
+    height: 500px;
+  }
 }
 .card-content {
   height: 100%;
@@ -160,20 +165,31 @@ export default {
   font-size: 2rem;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .title {
+    margin-top: 50px;
+  }
+}
 .underline {
   height: 2px;
   width: 100%;
   margin: 0.5rem auto;
 }
 .text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .name {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   position: absolute;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .text,
+  .name {
+    font-size: 1.5rem;
+  }
 }
 
 .btn {
