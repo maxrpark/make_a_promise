@@ -79,14 +79,14 @@ export default {
             scrub: true,
             pinSpacing: true,
             pin: '.promise-container',
-            end: () => '+=' + document.querySelector('.card').offsetWidth * 20,
+            end: () => '+=' + document.querySelector('.card').offsetWidth * 15,
           },
         });
         const reverseCardsArray = singleCard.reverse();
         // const reverseBackgorundColorArray = backgorundColor.reverse();
         for (let i = 0; i < reverseCardsArray.length; i++) {
           tl.to(`.${reverseCardsArray[i]}`, {
-            yPercent: 100 * 3,
+            yPercent: 100 * 2,
             opacity: 1,
           })
             .to(
