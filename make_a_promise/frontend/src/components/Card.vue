@@ -122,7 +122,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .promise-container {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
+  max-height: unset !important;
   position: fixed;
   position: relative;
   display: grid;

@@ -14,16 +14,9 @@
   font-family: 'Mulish', sans-serif;
 }
 body,
-html {
-  height: 100%;
-  width: 100%;
-}
+html,
 #app {
-  top: 0;
-  left: 0;
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 </style>
