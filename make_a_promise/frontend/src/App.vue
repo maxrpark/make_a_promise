@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <router-view />
   </div>
 </template>
@@ -12,5 +12,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#app {
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 </style>
