@@ -86,7 +86,7 @@ export default {
         // const reverseBackgorundColorArray = backgorundColor.reverse();
         for (let i = 0; i < reverseCardsArray.length; i++) {
           tl.to(`.${reverseCardsArray[i]}`, {
-            yPercent: 100 * 1,
+            yPercent: 100 * i,
             opacity: 1,
           })
             .to(
