@@ -103,13 +103,6 @@ export default {
                 background: backgorundColor[i],
               },
               '<'
-            )
-            .from(
-              `.${reverseCardsArray[i - 1]}`,
-              {
-                boxShadow: '20px 20px 20px red',
-              },
-              '<'
             );
         }
       }
