@@ -2,6 +2,9 @@
   <div>
     <div class="promise-container">
       <button @click="openModal" class="btn">Make a promise</button>
+      <div class="scroll">
+        <p>Scroll Down</p>
+      </div>
       <div class="background-color"></div>
       <div class="card">
         <div
@@ -76,7 +79,7 @@ export default {
             scrub: true,
             pinSpacing: true,
             pin: '.promise-container',
-            end: () => '+=' + document.querySelector('.card').offsetWidth * 15,
+            end: () => '+=' + document.querySelector('.card').offsetWidth * 10,
           },
         });
         const reverseCardsArray = singleCard.reverse();
@@ -116,11 +119,12 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .promise-container {
   width: 100%;
   height: 100vh;
   position: fixed;
-  /* position: relative; */
+  position: relative;
   display: grid;
   place-content: center;
   overflow: hidden;
@@ -131,6 +135,19 @@ export default {
   z-index: 1;
   position: relative;
 }
+.scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll p {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  justify-self: end;
+  color: white;
+}
+
 .background-color {
   position: absolute;
   z-index: -1;
@@ -192,12 +209,6 @@ export default {
   }
 }
 
-.btn {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 .btn {
   width: 220px;
   height: 50px;
@@ -275,10 +286,17 @@ export default {
     background-position: 0 0;
   }
 }
+
 .btn {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    top: 50px;
+  }
 }
 </style>
