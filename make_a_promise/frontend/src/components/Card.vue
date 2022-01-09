@@ -76,7 +76,7 @@ export default {
             scrub: true,
             pinSpacing: true,
             pin: '.promise-container',
-            end: () => '+=' + document.querySelector('.card').offsetWidth * 5,
+            end: () => '+=' + document.querySelector('.card').offsetWidth * 10,
           },
         });
         const reverseCardsArray = singleCard.reverse();
