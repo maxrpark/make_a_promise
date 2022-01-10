@@ -12,7 +12,7 @@ I have been using Vue for the last 6 months at work and also in my personal proj
 
 The most difficult part was deploying it, it was overwhelming at first but once I understood what was going on, it was very simple.
 
-##What is it about
+## What is it about?
 
 The idea of the project is that you can post a promise or resolution you will try to accomplish and also read other people's promises.
 
