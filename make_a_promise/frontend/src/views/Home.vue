@@ -73,7 +73,8 @@ export default {
 <style scoped>
 .main-section {
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  /* max-width: 90vw; */
 }
 .modal-open {
   overflow: hidden;

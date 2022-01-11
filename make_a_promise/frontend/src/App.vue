@@ -14,9 +14,9 @@
   font-family: 'Mulish', sans-serif;
 }
 body,
-html,
-#app {
+html {
   height: 100%;
   width: 100%;
+  // display: none;
 }
 </style>
