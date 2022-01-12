@@ -26,6 +26,9 @@ The application has only one view and two components, Cards and Form.
 
 This project can also be called a [gsap](https://maxicode.pythonanywhere.com/) project since most of the animation and the idea of the frontend design and functionality rely on gsap timelines and scrollTrigger plugging.
 
+### Buttom
+I code the nice button effect from this [codepen](https://codepen.io/kocsten/pen/rggjXp).
+
 ## Backend
 
 ### Django
@@ -36,5 +39,3 @@ I build the backend of this project using Django and Django Rest Framework. Prob
 
 I deployed the application in pythonAnywhere you can with it out clicking on the next link.
 [make a Wish](https://maxicode.pythonanywhere.com/).
-
-
