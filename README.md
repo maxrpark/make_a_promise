@@ -25,9 +25,9 @@ The application has only one view and two components, Cards and Form.
 ### GSAP
 
 This project can also be called a [gsap](https://maxicode.pythonanywhere.com/) project since most of the animation and the idea of the frontend design and functionality rely on gsap timelines and scrollTrigger plugging.
-
 ### Buttom
-I code the nice button effect from this [codepen](https://codepen.io/kocsten/pen/rggjXp).
+
+I got the nice button effect from this [codepen](https://codepen.io/kocsten/pen/rggjXp).
 
 ## Backend
 
